@@ -1,0 +1,198 @@
+/* ---------- Base ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #222;
+  background: #f8f7f3;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* ---------- General ---------- */
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 5%;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95;
+  font-weight: normal;
+  margin: 0 0 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.intro {
+  font-size: 1.3rem;
+  max-width: 500px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.4rem;
+  border: 1px solid #222;
+}
+
+.button:hover {
+  background: #222;
+  color: white;
+}
+
+
+/* ---------- Homepage ---------- */
+
+.hero {
+  padding: 12rem 0;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.featured-text {
+  max-width: 500px;
+}
+
+audio {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+
+/* ---------- Compositions ---------- */
+
+.page-heading {
+  padding: 8rem 0 5rem;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
+/* ---------- About ---------- */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  padding: 8rem 0;
+}
+
+.about img {
+  max-height: 700px;
+  object-fit: cover;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: 8rem;
+  padding: 3rem 5%;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+  header {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+
+  .hero {
+    padding: 7rem 0;
+  }
+
+  .featured,
+  .work,
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .page-heading {
+    padding: 6rem 0 3rem;
+  }
+
+}
