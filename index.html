@@ -3,31 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mum's Name — Composer</title>
+  <title data-page-title>Loading...</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <a class="logo" href="index.html">MUM'S NAME</a>
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="logo" href="index.html">Composer's NAME</a>
+      <span class="brand-role">Composer</span>
+    </div>
 
     <nav>
-      <a href="compositions.html">Compositions</a>
+      <a href="compositions.html">Works</a>
       <a href="about.html">About</a>
+      <a href="mailto:email@example.com">Contact</a>
     </nav>
+
+    <div class="botanical" aria-hidden="true">
+      <span class="botanical-stem"></span>
+      <span class="leaf leaf-one"></span>
+      <span class="leaf leaf-two"></span>
+      <span class="leaf leaf-three"></span>
+      <span class="leaf leaf-four"></span>
+      <span class="flower"></span>
+    </div>
+
+    <p class="copyright">© 2026 Composer's Name</p>
   </header>
 
   <main>
 
     <section class="hero">
-      <p class="eyebrow">Composer</p>
-      <h1>Music for the<br>imagination.</h1>
-      <p class="intro">
+      <p class="eyebrow" data-home-eyebrow>Composer</p>
+      <h1 data-home-title>Music for the<br>imagination.</h1>
+      <p class="intro" data-home-intro>
         Original compositions for piano, chamber ensembles,
         voice and orchestra.
       </p>
-      <a class="button" href="compositions.html">
+      <a class="button" href="compositions.html" data-home-button>
         Explore compositions
       </a>
     </section>
@@ -39,11 +54,11 @@
       </div>
 
       <div class="featured-text">
-        <p class="eyebrow">Featured work</p>
-        <h2>Composition One</h2>
-        <p>2025 · Piano · 8 minutes</p>
+        <p class="eyebrow" data-featured-eyebrow>Featured work</p>
+        <h2 data-featured-title>Composition One</h2>
+        <p data-featured-meta>2025 · Piano · 8 minutes</p>
 
-        <p>
+        <p data-featured-description>
           A short description of the composition can go here.
         </p>
 
@@ -51,16 +66,17 @@
           <source src="audio/composition-1.mp3" type="audio/mpeg">
         </audio>
 
-        <a href="compositions.html">View all works →</a>
+        <a href="compositions.html" data-view-all>View all works →</a>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Mum's Name</p>
+    <p data-footer>© 2026 Composer's Name</p>
   </footer>
 
+  <script src="content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

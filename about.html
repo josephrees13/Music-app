@@ -3,47 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Mum's Name</title>
+  <title data-page-title>Loading...</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <a class="logo" href="index.html">MUM'S NAME</a>
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="logo" href="index.html">Composer's NAME</a>
+      <span class="brand-role">Composer</span>
+    </div>
 
     <nav>
-      <a href="compositions.html">Compositions</a>
-      <a href="about.html">About</a>
+      <a href="compositions.html">Works</a>
+      <a class="active" href="about.html">About</a>
+      <a href="mailto:email@example.com">Contact</a>
     </nav>
+
+    <div class="botanical" aria-hidden="true">
+      <span class="botanical-stem"></span>
+      <span class="leaf leaf-one"></span>
+      <span class="leaf leaf-two"></span>
+      <span class="leaf leaf-three"></span>
+      <span class="leaf leaf-four"></span>
+      <span class="flower"></span>
+    </div>
+
+    <p class="copyright">© 2026 Composer's Name</p>
   </header>
 
   <main>
 
     <section class="about">
 
-      <img src="images/portrait.jpg" alt="Portrait of Mum's Name">
+      <img src="images/portrait.jpg" alt="Portrait of Composer's Name">
 
       <div>
-        <p class="eyebrow">About</p>
-        <h1>Mum's Name</h1>
+        <p class="eyebrow" data-about-eyebrow>About</p>
+        <h1 data-about-heading>Composer's Name</h1>
 
-        <p>
+        <p data-about-intro>
           Composer based in London, writing music for
           performers, ensembles and audiences.
         </p>
 
-        <p>
+        <p data-about-bio>
           Add a longer biography here. This could include
           musical background, education, commissions,
           performances and collaborations.
         </p>
 
-        <p>
+        <p data-about-contact-label>
           For enquiries, commissions or performance information:
         </p>
 
-        <a href="mailto:email@example.com">
+        <a href="mailto:email@example.com" data-about-email>
           email@example.com
         </a>
       </div>
@@ -53,9 +68,10 @@
   </main>
 
   <footer>
-    <p>© 2026 Mum's Name</p>
+    <p data-footer>© 2026 Composer's Name</p>
   </footer>
 
+  <script src="content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
