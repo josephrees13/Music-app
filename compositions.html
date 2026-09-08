@@ -3,75 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compositions — Mum's Name</title>
+  <title data-page-title>Loading...</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <a class="logo" href="index.html">MUM'S NAME</a>
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="logo" href="index.html">Composer's NAME</a>
+      <span class="brand-role">Composer</span>
+    </div>
 
     <nav>
-      <a href="compositions.html">Compositions</a>
+      <a class="active" href="compositions.html">Works</a>
       <a href="about.html">About</a>
+      <a href="mailto:email@example.com">Contact</a>
     </nav>
+
+    <div class="botanical" aria-hidden="true">
+      <span class="botanical-stem"></span>
+      <span class="leaf leaf-one"></span>
+      <span class="leaf leaf-two"></span>
+      <span class="leaf leaf-three"></span>
+      <span class="leaf leaf-four"></span>
+      <span class="flower"></span>
+    </div>
+
+    <p class="copyright">© 2026 Composer's Name</p>
   </header>
 
   <main>
 
     <section class="page-heading">
-      <p class="eyebrow">Selected works</p>
-      <h1>Compositions</h1>
+      <h1 data-compositions-heading>Compositions</h1>
+      <p class="eyebrow" data-compositions-eyebrow>Selected works</p>
     </section>
 
-    <section class="works">
-
-      <article class="work">
-        <img src="images/composition-1.jpg"
-             alt="Sheet music from Composition One">
-
-        <div>
-          <h2>Composition One</h2>
-          <p class="meta">2025 · Piano · 8 minutes</p>
-
-          <p>
-            A short description of the piece.
-          </p>
-
-          <audio controls>
-            <source src="audio/composition-1.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-      </article>
-
-
-      <article class="work">
-        <img src="images/composition-2.jpg"
-             alt="Sheet music from Composition Two">
-
-        <div>
-          <h2>Composition Two</h2>
-          <p class="meta">2024 · Chamber ensemble · 12 minutes</p>
-
-          <p>
-            A short description of the piece.
-          </p>
-
-          <audio controls>
-            <source src="audio/composition-2.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-      </article>
-
+    <section class="works" data-works>
     </section>
 
   </main>
 
   <footer>
-    <p>© 2026 Mum's Name</p>
+    <p data-footer>© 2026 Composer's Name</p>
   </footer>
 
+  <script src="content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
