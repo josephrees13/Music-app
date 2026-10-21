@@ -20,4 +20,3 @@ Gemfile.lock
 # Music data files
 *audio/Full_tracks
 *pdfs/
-*.docx
