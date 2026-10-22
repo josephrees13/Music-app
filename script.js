@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const content = window.siteContent;
-  const page = document.body.dataset.page || document.location.pathname.split('/').pop() || 'index.html';
+  const rawPage = document.body.dataset.page || document.location.pathname.split('/').pop() || 'index';
+  // Cloudflare serves clean URLs (/about), so ignore the .html extension
+  const page = rawPage.replace(/\.html$/, '') + '.html';
 
   const setText = (selector, value) => {
     const node = document.querySelector(selector);

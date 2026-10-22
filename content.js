@@ -60,7 +60,7 @@ window.siteContent = {
         description: "Description of the composition here.",
         image: "images/Deep in the Forest/full-score-page-1.png",
         alt: "First page of the full score for Deep in the Forest",
-        audio: "audio/clips/Deep in the Forest/MP3 Deep in the Forest CC - 1. The Forest.mp3"
+        audio: "audio/Clips/Deep in the Forest/MP3 Deep in the Forest CC - 1. The Forest.mp3"
       }
     ]
   }
